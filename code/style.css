@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/*
+Färgkoder:
+#f4f3ef
+#e7b60d
+#e5a213
+#e48e19
+#e37b1f
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.img_container {
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+.peperoni {
+  background-image: url(./assetts/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
+}
+.hawaii {
+  background-image: url(./assetts/chad-montano-MqT0asuoIcU-unsplash.jpg);
+}
+.vegetarian {
+  background-image: url(./assetts/crazy-cake-YgwXqOdLwOE-unsplash.jpg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 7rem;
+  width: auto;
+  margin: 1rem;
+}
+nav {
+  margin-right: 3rem;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #e37b1f;
+  margin-left: 1.5rem;
+}
+nav a:hover {
+  color: #e7b60d;
+}
+.hero,
+.pizzamenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  border-top: 2px solid #e37b1f;
+  border-bottom: 2px solid #e37b1f;
+}
+.pizza_img_logo {
+  height: 16rem;
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out;
+}
+.pizzamenu {
+  background-color: #e7b60d;
+  padding: 2rem;
+  height: auto;
+}
+
+h1 {
+  font-family: "Agbalumo";
+  font-size: 5rem;
+  background: -webkit-linear-gradient(#e7b60d, #e37b1f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  font-family: "Agbalumo";
+  color: #e7b60d;
+  margin: 1.5rem;
+}
+
+.img_container {
+  width: 10rem;
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  margin: 1rem;
+}
+.peperoni {
+  background-image: url(./assetts/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
+}
+.hawaii {
+  background-image: url(./assetts/chad-montano-MqT0asuoIcU-unsplash.jpg);
+}
+.vegetarian {
+  background-image: url(./assetts/crazy-cake-YgwXqOdLwOE-unsplash.jpg);
+}
+footer {
+  height: 5vh;
+  background-color: #e37b1f;
+}
+
+@media (min-width: 786px) {
+  .pizzamenu {
+    flex-direction: row;
+  }
+}

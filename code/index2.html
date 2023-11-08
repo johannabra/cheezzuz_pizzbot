@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assetts/pizzalogo.png" alt="pizzalogo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Our story</a>
+        <a href="#">Pizzamenu</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Pizzabot</h1>
+        <img
+          class="pizza_img_logo"
+          src="./assetts/pizzalogo.png"
+          alt="pizzalogo" />
+        <h2>Our pizzas are 2 die 4</h2>
+      </section>
+
+      <section class="pizzamenu">
+        <form
+          id="pizzaForm"
+          action="https://httpbin.org/anything"
+          method="post">
+          <label for="pizzaMenuSelect">Choose your Chezzuz Pizza: </label>
+          <select name="selectedPizza" id="pizzaMenuSelect" required>
+            <option value="" selected disabled>Pick a Pizza</option>
+            <option id="hawaiian" value="hawaiian">Cheezuz Hawaiian</option>
+            <option id="pepperoni" value="pepperoni">Cheezuz Pepperoni</option>
+            <option id="vegetarian" value="vegetarian">
+              Cheezuz Vegetarian
+            </option>
+          </select>
+          <label for="input">How many Pizzas?: </label>
+          <input
+            required
+            id="quantityInput"
+            type="number"
+            name="quantity"
+            min="0"
+            max="999" />
+          <button id="btn" type="submit">Place Order</button>
+        </form>
+        <div id="orderconfirm"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script2.js"></script>
+  </body>
+</html>

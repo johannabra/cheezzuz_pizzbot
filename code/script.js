@@ -3,11 +3,7 @@ const hawaiian = "Hawaiian Pizza";
 const pepperoni = "Pepperoni Pizza";
 
 const pizzaPrice = 80;
-const pizzaMenuArray = [
-  { pizzaName: "vegetarian", price: 80 },
-  { pizzaName: "hawaiian", price: 80 },
-  { pizzaName: "pepperon", price: 80 },
-];
+
 //Put your Javscript code here:
 
 const greeting = alert(

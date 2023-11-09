@@ -2,6 +2,8 @@ const hawaiian = document.getElementById("hawaiian");
 const pepperoni = document.querySelector("#pepperoni");
 const vegetarian = document.querySelector("#vegatarian");
 const form = document.querySelector("#pizzaForm");
+const heroEl = document.querySelector(".hero");
+
 /* const orderQuantity = document.querySelector("#quantityInput"); */
 const subBtn = document.querySelector("#btn");
 const orderConfirm = document.querySelector("#orderconfirm");
@@ -14,7 +16,7 @@ const calculater = (ordername, orderQuantity) => {
     pizzaTime = 10;
   } else if (orderQuantity <= 5) pizzaTime = 15;
   else pizzaTime = 20;
-  const orderTotal = `Great, I'll get started on your ${ordername} right away, it will cost ${price} kr. The pizzas will take ${pizzaTime} minutes.`;
+  const orderTotal = `Great, I'll get started on your ${ordername} right away,\n it will cost ${price} kr.\n The pizzas will take ${pizzaTime} minutes.`;
   return orderTotal;
 };
 
@@ -44,5 +46,10 @@ subBtn.addEventListener("click", (e) => {
   const orderQuantity = parseInt(
     document.querySelector("#quantityInput").value
   );
+  orderConfirm.style.display = "flex";
+  form.style.display = "none";
+  heroEl.style.display = "none";
+  orderConfirm.style.height = "10rem";
+
   confirm(orderName, orderQuantity);
 });

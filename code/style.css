@@ -20,6 +20,11 @@ Färgkoder:
   background-size: cover;
   height: 150px;
 }
+/* .mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 .peperoni {
   background-image: url(./assetts/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
 }
@@ -47,7 +52,7 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.3rem;
-  color: #e37b1f;
+  color: black;
   margin-left: 1.5rem;
 }
 nav a:hover {
@@ -110,8 +115,25 @@ footer {
   background-color: #e37b1f;
 }
 
+.thankYou {
+  display: none;
+  margin: 1rem;
+  border: 5px solid #e37b1fe3;
+  font-size: 20px;
+  font-family: "Agbalumo";
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 786px) {
   .pizzamenu {
     flex-direction: row;
+  }
+  .pizzaForm {
+    display: flex;
+    flex-direction: column;
   }
 }
